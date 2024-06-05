@@ -1,0 +1,10 @@
+Updated Balance:0.0
+deposit:5000.0
+withdraw:2000.0
+Updated Balance:3000.0
+
+
+Updated Balance:10000.0
+deposit:5000.0
+withdraw:2000.0
+Updated Balance:13000.0

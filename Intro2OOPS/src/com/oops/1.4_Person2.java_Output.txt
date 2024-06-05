@@ -1,0 +1,6 @@
+M_Person1 method called:
+Name:Sachin
+Age:20
+M_Employee method called:
+EmployeeID:1234
+Salary:10000.0
