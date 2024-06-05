@@ -1,0 +1,38 @@
+package com.oops;
+
+class Person {
+	
+	String name;
+	int age;
+	
+	public Person() {
+		
+	}
+	
+	void testPerson()
+	{
+		System.out.println("Person method called");
+	}
+}
+
+class Employee extends Person {
+	
+	int EmployeeID;
+	double Salary;
+	
+	public Employee() {
+		super();
+	}
+	
+	public void testEmployee()
+	{
+		System.out.println("");
+	}
+	
+}
+
+public class Person2 {
+	
+	
+
+}

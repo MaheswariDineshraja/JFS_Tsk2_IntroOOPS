@@ -1,0 +1,64 @@
+package com.oops;
+
+public class Account {
+	
+	private long id;
+	private double balance;
+	
+	public Account(long id, double balance)
+	{
+		this.id=id;
+		this.balance=balance;		
+	}
+	
+	public Account(Account account)
+	{
+		this.id=account.id;
+		this.balance=account.balance;		
+	}
+	
+	//methods
+	public void deposit(double amount)
+	{
+		if(amount>0)
+		{
+			this.balance=this.balance+amount;
+			System.out.println("Updated Balance:"+this.balancecheck());
+		}
+		
+	}
+	
+	public void withdraw(double amount)
+	{
+		if(this.balance>amount)
+		{
+			this.balance=this.balance-amount;
+			System.out.println("Updated Balance:"+this.balancecheck());
+		}
+		else {
+			System.out.println("Insufficient balnce!!");
+		}
+	}
+	
+	public double balancecheck()
+	{
+		return this.balance;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Account account1=new Account(1,10000);
+		Account account2=new Account(account1);
+				
+		account2.deposit(5000);
+		account2.withdraw(2000);	
+
+
+	}
+	
+	
+	
+
+}

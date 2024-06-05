@@ -1,0 +1,24 @@
+package com.oops;
+
+public class ProductMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		XYZ xyz = new XYZ();
+
+        // Accepting product information from the user
+        Product[] products = xyz.acceptProducts();
+
+        // Finding PID of the product with the highest price
+        int highestPricePid = xyz.findHighestPricePid(products);
+        System.out.println("PID of the product with the highest price: " + highestPricePid);
+
+        // Calculating total amount spent on all products
+        double totalAmountSpent = xyz.calculateTotalAmountSpent(products);
+        System.out.println("Total amount spent on all products: $" + totalAmountSpent);
+
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.oops;
+
+class Person1 {
+	
+	String name;
+	int age;
+	
+	public Person1() {
+		
+	}
+	
+	void testPerson()
+	{
+		
+	}
+}
+
+class Employee extends Person1 {
+	
+	int EmployeeID;
+	double Salary;
+	
+	public Employee() {
+		super();
+	}
+	
+	public void testEmployee()
+	{
+		System.out.println("");
+	}
+	
+}
+
+public class Person2 {
+	
+	
+
+}
